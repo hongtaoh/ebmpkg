@@ -1,0 +1,5 @@
+  Running command git clone --filter=blob:none -q https://github.com/Behrouz-Babaki/COP-Kmeans.git /tmp/pip-install-5cr3rqr9/copkmeans_b389e67a1f0745d8842b466ab74c7092
+  ERROR: Failed to restore /home/hhao9/.local/lib/python3.9/site-packages/zipp-3.20.2.dist-info/
+  ERROR: Failed to restore /home/hhao9/.local/lib/python3.9/site-packages/zipp/
+ERROR: Could not install packages due to an OSError: [Errno 122] Disk quota exceeded: '/home/hhao9/.local/lib/python3.9/site-packages/zipp'
+

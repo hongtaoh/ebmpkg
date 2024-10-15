@@ -1,0 +1,9 @@
+executable = test.sh
+Log = logs/eval.log
+Error = logs/eval.err
+Output = logs/eval.out
+request_cpus = 1
+request_memory = 1GB 
+request_disk = 5GB
+
+queue 1

@@ -1,0 +1,170 @@
+eval_sk.sh started at Tue Oct 15 14:50:51 CDT 2024
+Running in directory: /var/lib/condor/execute/slot1/dir_3586000
+Running with arguments: 200 0.1 3
+Unpacking virtual environment...
+Some packages not found, attempting to install dependencies with force reinstall and no cache...
+Defaulting to user installation because normal site-packages is not writeable
+Collecting copkmeans
+  Cloning https://github.com/Behrouz-Babaki/COP-Kmeans.git to /tmp/pip-install-gcrh74ou/copkmeans_57c76b8292334ae3bc2870d64df85576
+  Resolved https://github.com/Behrouz-Babaki/COP-Kmeans.git to commit 2cd2aabed52274435d56e8767476d86f85f91090
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting matplotlib==3.9.2
+  Downloading matplotlib-3.9.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.3 MB)
+Collecting numpy==2.0.2
+  Downloading numpy-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (19.5 MB)
+Collecting pandas==2.2.3
+  Downloading pandas-2.2.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+Collecting scipy==1.13.1
+  Downloading scipy-1.13.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (38.6 MB)
+Collecting scikit-learn==1.5.2
+  Downloading scikit_learn-1.5.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.4 MB)
+Collecting seaborn==0.13.2
+  Downloading seaborn-0.13.2-py3-none-any.whl (294 kB)
+Collecting kiwisolver>=1.3.1
+  Downloading kiwisolver-1.4.7-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+Collecting packaging>=20.0
+  Downloading packaging-24.1-py3-none-any.whl (53 kB)
+Collecting cycler>=0.10
+  Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting python-dateutil>=2.7
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Collecting fonttools>=4.22.0
+  Downloading fonttools-4.54.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.6 MB)
+Collecting contourpy>=1.0.1
+  Downloading contourpy-1.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (321 kB)
+Collecting importlib-resources>=3.2.0
+  Downloading importlib_resources-6.4.5-py3-none-any.whl (36 kB)
+Collecting pyparsing>=2.3.1
+  Downloading pyparsing-3.2.0-py3-none-any.whl (106 kB)
+Collecting pillow>=8
+  Downloading pillow-11.0.0-cp39-cp39-manylinux_2_28_x86_64.whl (4.4 MB)
+Collecting pytz>=2020.1
+  Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Collecting tzdata>=2022.7
+  Downloading tzdata-2024.2-py2.py3-none-any.whl (346 kB)
+Collecting threadpoolctl>=3.1.0
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Collecting joblib>=1.2.0
+  Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Collecting zipp>=3.1.0
+  Downloading zipp-3.20.2-py3-none-any.whl (9.2 kB)
+Collecting six>=1.5
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Using legacy 'setup.py install' for copkmeans, since package 'wheel' is not installed.
+Installing collected packages: zipp, six, numpy, tzdata, pytz, python-dateutil, pyparsing, pillow, packaging, kiwisolver, importlib-resources, fonttools, cycler, contourpy, threadpoolctl, scipy, pandas, matplotlib, joblib, seaborn, scikit-learn, copkmeans
+  Attempting uninstall: zipp
+    Found existing installation: zipp 3.20.2
+    Uninstalling zipp-3.20.2:
+      Successfully uninstalled zipp-3.20.2
+  Attempting uninstall: six
+    Found existing installation: six 1.16.0
+    Uninstalling six-1.16.0:
+      Successfully uninstalled six-1.16.0
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.0.2
+    Uninstalling numpy-2.0.2:
+      Successfully uninstalled numpy-2.0.2
+  Attempting uninstall: tzdata
+    Found existing installation: tzdata 2024.2
+    Uninstalling tzdata-2024.2:
+      Successfully uninstalled tzdata-2024.2
+  Attempting uninstall: pytz
+    Found existing installation: pytz 2024.2
+    Uninstalling pytz-2024.2:
+      Successfully uninstalled pytz-2024.2
+  Attempting uninstall: python-dateutil
+    Found existing installation: python-dateutil 2.9.0.post0
+    Uninstalling python-dateutil-2.9.0.post0:
+      Successfully uninstalled python-dateutil-2.9.0.post0
+  Attempting uninstall: pyparsing
+    Found existing installation: pyparsing 3.2.0
+    Uninstalling pyparsing-3.2.0:
+      Successfully uninstalled pyparsing-3.2.0
+  Attempting uninstall: pillow
+    Found existing installation: pillow 11.0.0
+    Uninstalling pillow-11.0.0:
+      Successfully uninstalled pillow-11.0.0
+  Attempting uninstall: packaging
+    Found existing installation: packaging 24.1
+    Uninstalling packaging-24.1:
+      Successfully uninstalled packaging-24.1
+  Attempting uninstall: kiwisolver
+    Found existing installation: kiwisolver 1.4.7
+    Uninstalling kiwisolver-1.4.7:
+      Successfully uninstalled kiwisolver-1.4.7
+  Attempting uninstall: importlib-resources
+    Found existing installation: importlib-resources 6.4.5
+    Uninstalling importlib-resources-6.4.5:
+      Successfully uninstalled importlib-resources-6.4.5
+  Attempting uninstall: fonttools
+    Found existing installation: fonttools 4.54.1
+    Uninstalling fonttools-4.54.1:
+      Successfully uninstalled fonttools-4.54.1
+  Attempting uninstall: cycler
+    Found existing installation: cycler 0.12.1
+    Uninstalling cycler-0.12.1:
+      Successfully uninstalled cycler-0.12.1
+  Attempting uninstall: contourpy
+    Found existing installation: contourpy 1.3.0
+    Uninstalling contourpy-1.3.0:
+      Successfully uninstalled contourpy-1.3.0
+  Attempting uninstall: threadpoolctl
+    Found existing installation: threadpoolctl 3.5.0
+    Uninstalling threadpoolctl-3.5.0:
+      Successfully uninstalled threadpoolctl-3.5.0
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.13.1
+    Uninstalling scipy-1.13.1:
+      Successfully uninstalled scipy-1.13.1
+  Attempting uninstall: pandas
+    Found existing installation: pandas 2.2.3
+    Uninstalling pandas-2.2.3:
+      Successfully uninstalled pandas-2.2.3
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.9.2
+    Uninstalling matplotlib-3.9.2:
+      Successfully uninstalled matplotlib-3.9.2
+  Attempting uninstall: joblib
+    Found existing installation: joblib 1.4.2
+    Uninstalling joblib-1.4.2:
+      Successfully uninstalled joblib-1.4.2
+  Attempting uninstall: seaborn
+    Found existing installation: seaborn 0.13.2
+    Uninstalling seaborn-0.13.2:
+      Successfully uninstalled seaborn-0.13.2
+  Attempting uninstall: scikit-learn
+    Found existing installation: scikit-learn 1.5.2
+    Uninstalling scikit-learn-1.5.2:
+      Successfully uninstalled scikit-learn-1.5.2
+  Attempting uninstall: copkmeans
+    Found existing installation: copkmeans 1.5
+    Uninstalling copkmeans-1.5:
+      Successfully uninstalled copkmeans-1.5
+    Running setup.py install for copkmeans: started
+    Running setup.py install for copkmeans: finished with status 'done'
+Successfully installed contourpy-1.3.0 copkmeans-1.5 cycler-0.12.1 fonttools-4.54.1 importlib-resources-6.4.5 joblib-1.4.2 kiwisolver-1.4.7 matplotlib-3.9.2 numpy-2.0.2 packaging-24.1 pandas-2.2.3 pillow-11.0.0 pyparsing-3.2.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.13.1 seaborn-0.13.2 six-1.16.0 threadpoolctl-3.5.0 tzdata-2024.2 zipp-3.20.2
+Files present:
+total 162684
+-rw-r--r-- 1 hhao9 hhao9       637 Oct 15 14:51 _condor_stderr
+-rw-r--r-- 1 hhao9 hhao9      7251 Oct 15 14:51 _condor_stdout
+drwxr-xr-x 6 hhao9 hhao9      4096 Sep 23 12:54 bayes
+-rw-r--r-- 1 hhao9 hhao9 142493853 Oct 15 14:50 bayes.tar.gz
+drwxr-xr-x 2 hhao9 hhao9     32768 Sep 23 12:51 data
+-rw-r--r-- 1 hhao9 hhao9  23994367 Oct 15 14:50 data.tar.gz
+-rw-r--r-- 1 hhao9 hhao9      2698 Oct 15 14:50 eval_sk.py
+-rwxr-xr-x 1 hhao9 hhao9      1296 Oct 15 14:50 eval_sk.sh
+-rw-r--r-- 1 hhao9 hhao9     11078 Oct 15 14:50 new_utils.py
+-rw-r--r-- 1 hhao9 hhao9       163 Oct 15 14:50 requirements.txt
+drwxr-xr-x 5 hhao9 hhao9      4096 Oct 15 14:50 soft_kmeans
+-rw-r--r-- 1 hhao9 hhao9     12238 Oct 15 14:50 soft_kmeans_alg.py
+drwx------ 2 hhao9 hhao9      4096 Oct 15 14:51 tmp
+drwx------ 3 hhao9 hhao9      4096 Oct 15 14:50 var
+Current working directory: /var/lib/condor/execute/slot1/dir_3586000
+Data directory: /var/lib/condor/execute/slot1/dir_3586000/data
+Temp results directory: /var/lib/condor/execute/slot1/dir_3586000/soft_kmeans/temp_json_results
+Image directory: /var/lib/condor/execute/slot1/dir_3586000/soft_kmeans/img
+Processing with j=200, r=0.1, m=3
+Data file found: /var/lib/condor/execute/slot1/dir_3586000/data/20|200_3.csv
+iteration 10 done, current accepted likelihood: -4523.066915715532, current acceptance ratio is 70.00 %, current accepted order is dict_values([np.int64(7), np.int64(4), np.int64(1), np.int64(8), np.int64(5), np.int64(2), np.int64(10), np.int64(9), np.int64(3), np.int64(6)]), 
+20|200_3 is done! Results written to /var/lib/condor/execute/slot1/dir_3586000/soft_kmeans/temp_json_results/temp_results_200_0.1_3.json
