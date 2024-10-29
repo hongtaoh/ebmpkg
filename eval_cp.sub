@@ -4,7 +4,7 @@ Arguments = $(j) $(r) $(m)
 Initialdir = /home/hhao9/ebm_package
 
 # Transfer necessary files to the compute node
-transfer_input_files = eval_cp.py, new_utils.py, conjugate_priors_alg.py, data.tar.gz, bayes.tar.gz, requirements.txt, eval_cp.sh
+transfer_input_files = eval_cp.py, new_utils.py, conjugate_priors_alg.py, data.tar.gz, ebm.tar.gz, requirements.txt, eval_cp.sh
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
 transfer_output_files = conjugate_priors
@@ -14,8 +14,8 @@ Error = conjugate_priors/logs/eval_j$(j)_r$(r)_m$(m).err
 Output = conjugate_priors/logs/eval_j$(j)_r$(r)_m$(m).out
 
 request_cpus = 1
-request_memory = 5GB 
-request_disk = 5GB
+request_memory = 2GB 
+request_disk = 2GB
 
 queue j, r, m from (
 50 0.25 3

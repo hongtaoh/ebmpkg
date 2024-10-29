@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Create logs directory if it doesn't exist
-mkdir -p conjugate_priors
-mkdir -p conjugate_priors/logs
-mkdir -p conjugate_priors/img
+mkdir -p constrained_kmeans
+mkdir -p constrained_kmeans/logs
+mkdir -p constrained_kmeans/img
 # Create temp results directory if it doesn't exist
-mkdir -p conjugate_priors/temp_json_results
+mkdir -p constrained_kmeans/temp_json_results
 
 echo "eval_cp.sh started at $(date)"
 echo "Running in directory: $(pwd)" 
@@ -39,5 +39,5 @@ ls -l
 # pip install -r requirements.txt
 
 # Run the Python script with arguments and log errors
-python ./eval_cp.py "$@"
+python ./eval_ck.py "$@"
 

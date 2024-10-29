@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 import new_utils
 import math
 
@@ -187,7 +186,7 @@ def calculate_all_participant_ln_likelihood_and_update_hashmap(
             # calculate weighted average
             this_participant_likelihood = np.mean(likelihood_sum)
             this_participant_ln_likelihood = np.log(
-                this_participant_likelihood + 1e-10)
+                this_participant_likelihood)
         all_participant_ln_likelihood += this_participant_ln_likelihood
     return all_participant_ln_likelihood, hashmap_of_normalized_stage_likelihood_dicts
 
@@ -197,7 +196,7 @@ def metropolis_hastings_soft_kmeans(
     iterations,
     n_shuffle,
 ):
-    '''Implement the metropolis-hastings algorithm
+    '''Implement the metropolis-hastings algorithm using soft kmeans
     Inputs: 
         - data: data_we_have
         - iterations: number of iterations

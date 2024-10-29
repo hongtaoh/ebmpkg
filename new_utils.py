@@ -2,17 +2,13 @@ from typing import List, Optional, Tuple, Dict
 import pandas as pd
 import numpy as np
 import os
-from scipy.stats import kendalltau
-from scipy.stats import mode
-from sklearn.cluster import KMeans
-from sklearn.cluster import AgglomerativeClustering
 from collections import OrderedDict
 import seaborn as sns
 import matplotlib.pyplot as plt
 import math
 from copkmeans.cop_kmeans import cop_kmeans
 
-def compute_theta_phi_for_biomarker(biomarker_df):
+def compute_theta_phi_for_biomarker(biomarker_df, max_attempt = 100):
     """get theta and phi parameters for this biomarker using constrained k-means
     input: 
         - biomarker_df: a pd.dataframe of a specific biomarker
@@ -23,14 +19,23 @@ def compute_theta_phi_for_biomarker(biomarker_df):
     measurements = np.array(biomarker_df['measurement']).reshape(-1, 1)
     healthy_df = biomarker_df[biomarker_df['diseased'] == False]
     must_link = [(x, 0) for x in healthy_df.index]
-    # imeplement Constrained K-means algorithm
+    # Implement Constrained K-means algorithm
     # https://github.com/Behrouz-Babaki/COP-Kmeans
-    clusters, centers = cop_kmeans(dataset=measurements, k=n_clusters, ml=must_link)
-    predictions = np.array(clusters)
-    healthy_predictions = predictions[healthy_df.index]
+
+    curr_attempt = 0
+    while curr_attempt < max_attempt:
+        clusters, centers = cop_kmeans(dataset=measurements, k=n_clusters, ml=must_link)
+        predictions = np.array(clusters)
+        healthy_predictions = predictions[healthy_df.index]
+        cluster_counts = np.bincount(predictions)
+        if all(c > 1 for c in cluster_counts) and len(cluster_counts) == n_clusters and len(set(healthy_predictions)) == 1:
+            break 
+        curr_attempt += 1
+    
+    if curr_attempt > 2:
+        print(curr_attempt)
 
     # double check the result
-    cluster_counts = np.bincount(predictions)
     if not all(c > 1 for c in cluster_counts):
         raise ValueError(f"Not all clusters have more than one node.")
     if len(cluster_counts) != n_clusters:

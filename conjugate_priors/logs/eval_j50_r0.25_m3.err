@@ -1,5 +1,5 @@
-  Running command git clone --filter=blob:none -q https://github.com/Behrouz-Babaki/COP-Kmeans.git /tmp/pip-install-5cr3rqr9/copkmeans_b389e67a1f0745d8842b466ab74c7092
-  ERROR: Failed to restore /home/hhao9/.local/lib/python3.9/site-packages/zipp-3.20.2.dist-info/
-  ERROR: Failed to restore /home/hhao9/.local/lib/python3.9/site-packages/zipp/
-ERROR: Could not install packages due to an OSError: [Errno 122] Disk quota exceeded: '/home/hhao9/.local/lib/python3.9/site-packages/zipp'
-
+  Running command git clone --filter=blob:none -q https://github.com/Behrouz-Babaki/COP-Kmeans.git /tmp/pip-install-w4jkrfs9/copkmeans_f0d2e7425574467c9897d9214bd901c8
+  WARNING: The scripts f2py and numpy-config are installed in '/home/hhao9/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts fonttools, pyftmerge, pyftsubset and ttx are installed in '/home/hhao9/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.

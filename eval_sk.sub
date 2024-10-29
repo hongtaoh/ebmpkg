@@ -4,7 +4,7 @@ Arguments = $(j) $(r) $(m)
 Initialdir = /home/hhao9/ebm_package
 
 # Transfer necessary files to the compute node
-transfer_input_files = eval_sk.py, new_utils.py, soft_kmeans_alg.py, data.tar.gz, eval_sk.sh, bayes.tar.gz, requirements.txt
+transfer_input_files = eval_sk.py, new_utils.py, soft_kmeans_alg.py, data.tar.gz, eval_sk.sh, ebm.tar.gz, requirements.txt
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
 transfer_output_files = soft_kmeans 
