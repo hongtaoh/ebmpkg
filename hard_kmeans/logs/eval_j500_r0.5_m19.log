@@ -1,0 +1,93 @@
+000 (869922.619.000) 2024-11-06 12:35:02 Job submitted from host: <128.105.68.112:9618?addrs=128.105.68.112-9618+[2607-f388-2200-100-eaeb-d3ff-fea3-4202]-9618&alias=ap2001.chtc.wisc.edu&noUDP&sock=schedd_2481604_82f2>
+...
+040 (869922.619.000) 2024-11-06 12:43:04 Started transferring input files
+	Transferring to host: <128.105.68.53:9618?addrs=128.105.68.53-9618+[2607-f388-2200-100-3680-dff-fe2e-8828]-9618&alias=e2483.chtc.wisc.edu&noUDP&sock=slot1_12_619869_8950_65196>
+...
+040 (869922.619.000) 2024-11-06 12:43:05 Finished transferring input files
+...
+001 (869922.619.000) 2024-11-06 12:43:05 Job executing on host: <128.105.68.53:9618?addrs=128.105.68.53-9618+[2607-f388-2200-100-3680-dff-fe2e-8828]-9618&alias=e2483.chtc.wisc.edu&noUDP&sock=startd_17595_48f4>
+	SlotName: slot1_12@e2483.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_2211580"
+	Cpus = 1
+	Disk = 2098176
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 2048
+...
+006 (869922.619.000) 2024-11-06 12:43:18 Image size of job updated: 8236
+	9  -  MemoryUsage of job (MB)
+	8236  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 12:48:18 Image size of job updated: 55916
+	55  -  MemoryUsage of job (MB)
+	55916  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 12:53:19 Image size of job updated: 61224
+	60  -  MemoryUsage of job (MB)
+	61224  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 13:03:20 Image size of job updated: 61240
+	60  -  MemoryUsage of job (MB)
+	61240  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 13:13:21 Image size of job updated: 61268
+	60  -  MemoryUsage of job (MB)
+	61268  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 13:53:25 Image size of job updated: 61272
+	60  -  MemoryUsage of job (MB)
+	61272  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 15:03:35 Image size of job updated: 61396
+	60  -  MemoryUsage of job (MB)
+	61396  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 15:08:36 Image size of job updated: 61400
+	60  -  MemoryUsage of job (MB)
+	61400  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 18:03:54 Image size of job updated: 66272
+	65  -  MemoryUsage of job (MB)
+	66272  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 18:08:54 Image size of job updated: 74200
+	73  -  MemoryUsage of job (MB)
+	74200  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 18:13:55 Image size of job updated: 76760
+	75  -  MemoryUsage of job (MB)
+	76760  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 18:18:55 Image size of job updated: 77020
+	76  -  MemoryUsage of job (MB)
+	77020  -  ResidentSetSize of job (KB)
+...
+006 (869922.619.000) 2024-11-06 18:48:59 Image size of job updated: 80396
+	79  -  MemoryUsage of job (MB)
+	80396  -  ResidentSetSize of job (KB)
+...
+040 (869922.619.000) 2024-11-07 02:34:29 Started transferring output files
+...
+040 (869922.619.000) 2024-11-07 02:34:29 Finished transferring output files
+...
+005 (869922.619.000) 2024-11-07 02:34:29 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 13:42:23, Sys 0 00:00:17  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 13:42:23, Sys 0 00:00:17  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	331863  -  Run Bytes Sent By Job
+	128219296  -  Run Bytes Received By Job
+	331863  -  Total Bytes Sent By Job
+	128219296  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            : 692161     2097152   2098176 
+	   GPUs                 :                            0 
+	   IoHeavy              :                            0 
+	   Memory (MB)          :     79        2048      2048 
+	   TimeExecute (s)      :  49884                       
+	   TimeSlotBusy (s)     :  49885                       
+
+	Job terminated of its own accord at 2024-11-07T08:34:29Z with exit-code 0.
+...

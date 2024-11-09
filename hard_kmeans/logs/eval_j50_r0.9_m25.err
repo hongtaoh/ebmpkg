@@ -1,0 +1,2 @@
+WARNING: Target directory /var/lib/condor/execute/slot1/dir_2915315/packages/__pycache__ already exists. Specify --upgrade to force replacement.
+Could not save font_manager cache [Errno 122] Disk quota exceeded

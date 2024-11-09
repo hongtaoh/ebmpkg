@@ -1,0 +1,87 @@
+000 (869921.591.000) 2024-11-06 12:34:51 Job submitted from host: <128.105.68.112:9618?addrs=128.105.68.112-9618+[2607-f388-2200-100-eaeb-d3ff-fea3-4202]-9618&alias=ap2001.chtc.wisc.edu&noUDP&sock=schedd_2481604_82f2>
+...
+022 (869921.591.000) 2024-11-06 12:37:41 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_120@e4003.chtc.wisc.edu <128.105.69.92:9618?addrs=128.105.69.92-9618+[2607-f388-2200-100-1270-fdff-fe56-689c]-9618&alias=e4003.chtc.wisc.edu&noUDP&sock=startd_16564_1ad0>
+...
+024 (869921.591.000) 2024-11-06 12:41:01 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_120@e4003.chtc.wisc.edu, rescheduling job
+...
+004 (869921.591.000) 2024-11-06 12:41:01 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Job not found at execution machine
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   150000  2097152   2098362 
+	   GPUs                 :                           0 
+	   IoHeavy              :                           0 
+	   Memory (MB)          :              2048      2048 
+...
+040 (869921.591.000) 2024-11-06 12:41:04 Started transferring input files
+	Transferring to host: <128.105.69.129:9618?addrs=128.105.69.129-9618+[2607-f388-2200-100-1270-fdff-fe56-6734]-9618&alias=e4078.chtc.wisc.edu&noUDP&sock=slot1_46_2829474_262d_78421>
+...
+040 (869921.591.000) 2024-11-06 12:41:05 Finished transferring input files
+...
+001 (869921.591.000) 2024-11-06 12:41:05 Job executing on host: <128.105.69.129:9618?addrs=128.105.69.129-9618+[2607-f388-2200-100-1270-fdff-fe56-6734]-9618&alias=e4078.chtc.wisc.edu&noUDP&sock=startd_20395_da22>
+	SlotName: slot1_46@e4078.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_1439712"
+	Cpus = 1
+	Disk = 2098305
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 2048
+...
+006 (869921.591.000) 2024-11-06 12:41:18 Image size of job updated: 19676
+	20  -  MemoryUsage of job (MB)
+	19676  -  ResidentSetSize of job (KB)
+...
+006 (869921.591.000) 2024-11-06 12:46:18 Image size of job updated: 49280
+	49  -  MemoryUsage of job (MB)
+	49280  -  ResidentSetSize of job (KB)
+...
+006 (869921.591.000) 2024-11-06 12:51:19 Image size of job updated: 49388
+	49  -  MemoryUsage of job (MB)
+	49388  -  ResidentSetSize of job (KB)
+...
+006 (869921.591.000) 2024-11-06 13:11:21 Image size of job updated: 49396
+	49  -  MemoryUsage of job (MB)
+	49396  -  ResidentSetSize of job (KB)
+...
+006 (869921.591.000) 2024-11-06 15:06:32 Image size of job updated: 49400
+	49  -  MemoryUsage of job (MB)
+	49400  -  ResidentSetSize of job (KB)
+...
+006 (869921.591.000) 2024-11-07 02:14:46 Image size of job updated: 49432
+	49  -  MemoryUsage of job (MB)
+	49432  -  ResidentSetSize of job (KB)
+...
+040 (869921.591.000) 2024-11-07 02:14:46 Started transferring output files
+...
+040 (869921.591.000) 2024-11-07 02:14:46 Finished transferring output files
+...
+005 (869921.591.000) 2024-11-07 02:14:46 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 13:24:59, Sys 0 00:00:32  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 13:24:59, Sys 0 00:00:32  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	45033  -  Run Bytes Sent By Job
+	128226480  -  Run Bytes Received By Job
+	45033  -  Total Bytes Sent By Job
+	128226480  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            : 691891     2097152   2098305 
+	   GPUs                 :                            0 
+	   IoHeavy              :                            0 
+	   Memory (MB)          :     49        2048      2048 
+	   TimeExecute (s)      :  48821                       
+	   TimeSlotBusy (s)     :  48822                       
+
+	Job terminated of its own accord at 2024-11-07T08:14:46Z with exit-code 0.
+...

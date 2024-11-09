@@ -5,3 +5,6 @@ bayes.tar.gz
 data.tar.gz 
 ebm/
 ebm.tar.gz 
+wheels/
+wheels.tar.gz 
+packages/

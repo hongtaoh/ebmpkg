@@ -9,13 +9,13 @@ import sys
 import os
 
 n_shuffle = 2
-iterations = 10
-burn_in = 2
-thining = 2
+# iterations = 10
+# burn_in = 2
+# thining = 2
 
-# iterations = 10000
-# burn_in = 5000
-# thining = 100
+iterations = 10000
+burn_in = 5000
+thining = 100
 
 base_dir = os.getcwd()
 print(f"Current working directory: {base_dir}")

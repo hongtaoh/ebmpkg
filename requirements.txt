@@ -3,5 +3,4 @@ numpy
 pandas
 scipy
 seaborn
-git+https://github.com/Behrouz-Babaki/COP-Kmeans.git#egg=copkmeans
-
+scikit-learn

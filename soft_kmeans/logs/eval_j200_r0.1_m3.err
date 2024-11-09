@@ -1,5 +1,3 @@
-  Running command git clone --filter=blob:none -q https://github.com/Behrouz-Babaki/COP-Kmeans.git /tmp/pip-install-gcrh74ou/copkmeans_57c76b8292334ae3bc2870d64df85576
-  WARNING: The scripts f2py and numpy-config are installed in '/home/hhao9/.local/bin' which is not on PATH.
-  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
-  WARNING: The scripts fonttools, pyftmerge, pyftsubset and ttx are installed in '/home/hhao9/.local/bin' which is not on PATH.
-  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+WARNING: Target directory /var/lib/condor/execute/slot1/dir_1772524/packages/__pycache__ already exists. Specify --upgrade to force replacement.
+/var/lib/condor/execute/slot1/dir_1772524/soft_kmeans_alg.py:263: RuntimeWarning: overflow encountered in exp
+  prob_of_accepting_new_order = np.exp(

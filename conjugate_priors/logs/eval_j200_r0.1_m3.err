@@ -1,5 +1,1 @@
-  Running command git clone --filter=blob:none -q https://github.com/Behrouz-Babaki/COP-Kmeans.git /tmp/pip-install-5igcpk3d/copkmeans_a00241cf7ad04214bbe9e9c1266bf2b4
-  WARNING: The scripts f2py and numpy-config are installed in '/home/hhao9/.local/bin' which is not on PATH.
-  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
-  WARNING: The scripts fonttools, pyftmerge, pyftsubset and ttx are installed in '/home/hhao9/.local/bin' which is not on PATH.
-  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+WARNING: Target directory /var/lib/condor/execute/slot1/dir_1855342/packages/__pycache__ already exists. Specify --upgrade to force replacement.

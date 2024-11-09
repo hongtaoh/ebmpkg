@@ -1,6 +1,5 @@
 import numpy as np
 import new_utils
-import math
 
 def calculate_soft_kmeans_for_biomarker(
         data,
@@ -126,10 +125,10 @@ def soft_kmeans_theta_phi_estimates(
             diseased_stages,
             seed
         )
-        if theta_std == 0 or math.isnan(theta_std):
+        if theta_std == 0 or np.isnan(theta_std):
             theta_mean = prior_theta_phi_estimates_biomarker['theta_mean']
             theta_std = prior_theta_phi_estimates_biomarker['theta_std']
-        if phi_std == 0 or math.isnan(phi_std):
+        if phi_std == 0 or np.isnan(phi_std):
             phi_mean = prior_theta_phi_estimates_biomarker['phi_mean']
             phi_std = prior_theta_phi_estimates_biomarker['phi_std']
         dic['theta_mean'] = theta_mean

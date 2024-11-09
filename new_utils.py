@@ -5,45 +5,48 @@ import os
 from collections import OrderedDict
 import seaborn as sns
 import matplotlib.pyplot as plt
-import math
-from copkmeans.cop_kmeans import cop_kmeans
+from sklearn.cluster import KMeans
+from scipy.stats import mode
 
-def compute_theta_phi_for_biomarker(biomarker_df, max_attempt = 100):
-    """get theta and phi parameters for this biomarker using constrained k-means
+def compute_theta_phi_for_biomarker(biomarker_df, max_attempt = 100, seed = None):
+    """get theta and phi parameters for this biomarker using hard k-means
     input: 
         - biomarker_df: a pd.dataframe of a specific biomarker
     output: 
         - a tuple: theta_mean, theta_std, phi_mean, phi_std
     """
+    if seed is not None:
+        # Set the seed for numpy's random number generator
+        rng = np.random.default_rng(seed)
+    else:
+        rng = np.random
+
     n_clusters = 2
     measurements = np.array(biomarker_df['measurement']).reshape(-1, 1)
     healthy_df = biomarker_df[biomarker_df['diseased'] == False]
-    must_link = [(x, 0) for x in healthy_df.index]
-    # Implement Constrained K-means algorithm
-    # https://github.com/Behrouz-Babaki/COP-Kmeans
 
     curr_attempt = 0
+    n_init_value = 50
+    clustering_setup = KMeans(n_clusters=n_clusters, n_init=n_init_value)
+    
     while curr_attempt < max_attempt:
-        clusters, centers = cop_kmeans(dataset=measurements, k=n_clusters, ml=must_link)
-        predictions = np.array(clusters)
-        healthy_predictions = predictions[healthy_df.index]
-        cluster_counts = np.bincount(predictions)
-        if all(c > 1 for c in cluster_counts) and len(cluster_counts) == n_clusters and len(set(healthy_predictions)) == 1:
+        clustering_result = clustering_setup.fit(measurements)
+        predictions = clustering_result.labels_
+        cluster_counts = np.bincount(predictions) # array([3, 2])
+        
+        if len(cluster_counts) == n_clusters and all(c > 1 for c in cluster_counts):
             break 
         curr_attempt += 1
+    else:
+        print(f"KMeans failed. Try randomizing the predictions")
+        predictions = rng.choice([0, 1], size=len(measurements))
+        cluster_counts = np.bincount(predictions)
+        if len(cluster_counts) != n_clusters or not all(c > 1 for c in cluster_counts):
+            raise ValueError(f"KMeans clustering failed to find valid clusters within max_attempt.")
     
-    if curr_attempt > 2:
-        print(curr_attempt)
-
-    # double check the result
-    if not all(c > 1 for c in cluster_counts):
-        raise ValueError(f"Not all clusters have more than one node.")
-    if len(cluster_counts) != n_clusters:
-        raise ValueError(f"Number of clusters is not equal to {n_clusters}.")
-    if len(set(healthy_predictions)) > 1:
-        raise ValueError("Not all healthy participants belong to one cluster.")
-    
-    phi_cluster_idx = healthy_predictions[0]
+    healthy_predictions = predictions[healthy_df.index]
+    mode_result = mode(healthy_predictions, keepdims=False).mode
+    phi_cluster_idx = mode_result[0] if isinstance(mode_result, np.ndarray) else mode_result
     theta_cluster_idx = 1 - phi_cluster_idx
 
     # two empty clusters to strore measurements
@@ -60,15 +63,9 @@ def compute_theta_phi_for_biomarker(biomarker_df, max_attempt = 100):
         clustered_measurements[phi_cluster_idx]), np.std(
             clustered_measurements[phi_cluster_idx])
     
-    # check whether the prior_theta_phi contain 0s or nan
-    if math.isnan(theta_std) or theta_std == 0:
-        raise ValueError(f"Invalid theta_std: {theta_std}")
-    if math.isnan(phi_std) or phi_std == 0:
-        raise ValueError(f"Invalid phi_std: {phi_std}")
-    if theta_mean == 0 or math.isnan(theta_mean):
-        raise ValueError(f"Invalid theta_mean: {theta_mean}")
-    if phi_mean == 0 or math.isnan(phi_mean):
-        raise ValueError(f"Invalid phi_mean: {phi_mean}")
+    # Check for invalid values
+    if any(np.isnan(v) or v == 0 for v in [theta_std, phi_std, theta_mean, phi_mean]):
+        raise ValueError("One of the calculated values is invalid (0 or NaN).")
 
     return theta_mean, theta_std, phi_mean, phi_std
 

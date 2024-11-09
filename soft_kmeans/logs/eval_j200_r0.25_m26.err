@@ -1,0 +1,4 @@
+WARNING: Target directory /var/lib/condor/execute/slot1/dir_3937483/packages/__pycache__ already exists. Specify --upgrade to force replacement.
+Could not save font_manager cache [Errno 122] Disk quota exceeded
+/var/lib/condor/execute/slot1/dir_3937483/soft_kmeans_alg.py:263: RuntimeWarning: overflow encountered in exp
+  prob_of_accepting_new_order = np.exp(

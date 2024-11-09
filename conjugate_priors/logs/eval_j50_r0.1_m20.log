@@ -1,0 +1,65 @@
+000 (869921.020.000) 2024-11-06 12:34:51 Job submitted from host: <128.105.68.112:9618?addrs=128.105.68.112-9618+[2607-f388-2200-100-eaeb-d3ff-fea3-4202]-9618&alias=ap2001.chtc.wisc.edu&noUDP&sock=schedd_2481604_82f2>
+...
+040 (869921.020.000) 2024-11-06 12:35:31 Started transferring input files
+	Transferring to host: <128.105.68.50:9618?addrs=128.105.68.50-9618+[2607-f388-2200-100-3680-dff-fe2e-8798]-9618&alias=e2480.chtc.wisc.edu&noUDP&sock=slot1_34_3525636_4182_80120>
+...
+040 (869921.020.000) 2024-11-06 12:35:33 Finished transferring input files
+...
+001 (869921.020.000) 2024-11-06 12:35:33 Job executing on host: <128.105.68.50:9618?addrs=128.105.68.50-9618+[2607-f388-2200-100-3680-dff-fe2e-8798]-9618&alias=e2480.chtc.wisc.edu&noUDP&sock=startd_12431_35e3>
+	SlotName: slot1_34@e2480.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_2185688"
+	Cpus = 1
+	Disk = 2098176
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 2048
+...
+006 (869921.020.000) 2024-11-06 12:35:46 Image size of job updated: 57324
+	56  -  MemoryUsage of job (MB)
+	57324  -  ResidentSetSize of job (KB)
+...
+006 (869921.020.000) 2024-11-06 12:40:46 Image size of job updated: 144376
+	141  -  MemoryUsage of job (MB)
+	144376  -  ResidentSetSize of job (KB)
+...
+006 (869921.020.000) 2024-11-06 12:45:47 Image size of job updated: 144480
+	142  -  MemoryUsage of job (MB)
+	144480  -  ResidentSetSize of job (KB)
+...
+006 (869921.020.000) 2024-11-06 13:05:48 Image size of job updated: 144772
+	142  -  MemoryUsage of job (MB)
+	144772  -  ResidentSetSize of job (KB)
+...
+006 (869921.020.000) 2024-11-06 13:10:49 Image size of job updated: 144804
+	142  -  MemoryUsage of job (MB)
+	144804  -  ResidentSetSize of job (KB)
+...
+006 (869921.020.000) 2024-11-06 13:35:51 Image size of job updated: 144864
+	142  -  MemoryUsage of job (MB)
+	144864  -  ResidentSetSize of job (KB)
+...
+040 (869921.020.000) 2024-11-06 15:10:45 Started transferring output files
+...
+040 (869921.020.000) 2024-11-06 15:10:45 Finished transferring output files
+...
+005 (869921.020.000) 2024-11-06 15:10:45 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 02:32:33, Sys 0 00:00:38  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 02:32:33, Sys 0 00:00:38  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	43965  -  Run Bytes Sent By Job
+	128226480  -  Run Bytes Received By Job
+	43965  -  Total Bytes Sent By Job
+	128226480  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            : 691890     2097152   2098176 
+	   GPUs                 :                            0 
+	   IoHeavy              :                            0 
+	   Memory (MB)          :    142        2048      2048 
+	   TimeExecute (s)      :   9312                       
+	   TimeSlotBusy (s)     :   9315                       
+
+	Job terminated of its own accord at 2024-11-06T21:10:45Z with exit-code 0.
+...

@@ -1,0 +1,65 @@
+000 (869921.735.000) 2024-11-06 12:34:51 Job submitted from host: <128.105.68.112:9618?addrs=128.105.68.112-9618+[2607-f388-2200-100-eaeb-d3ff-fea3-4202]-9618&alias=ap2001.chtc.wisc.edu&noUDP&sock=schedd_2481604_82f2>
+...
+040 (869921.735.000) 2024-11-06 12:36:45 Entered queue to transfer input files
+	Transferring to host: <128.105.69.131:9618?addrs=128.105.69.131-9618+[2607-f388-2200-100-1270-fdff-fe56-6724]-9618&alias=e4080.chtc.wisc.edu&noUDP&sock=slot1_160_1115500_69ab_92159>
+...
+040 (869921.735.000) 2024-11-06 12:36:53 Started transferring input files
+	Seconds spent in queue: 8
+...
+040 (869921.735.000) 2024-11-06 12:36:59 Finished transferring input files
+...
+001 (869921.735.000) 2024-11-06 12:36:59 Job executing on host: <128.105.69.131:9618?addrs=128.105.69.131-9618+[2607-f388-2200-100-1270-fdff-fe56-6724]-9618&alias=e4080.chtc.wisc.edu&noUDP&sock=startd_14636_a838>
+	SlotName: slot1_160@e4080.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_1277802"
+	Cpus = 1
+	Disk = 2098305
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 2048
+...
+006 (869921.735.000) 2024-11-06 12:37:08 Image size of job updated: 3640
+	4  -  MemoryUsage of job (MB)
+	3640  -  ResidentSetSize of job (KB)
+...
+006 (869921.735.000) 2024-11-06 12:42:09 Image size of job updated: 45300
+	45  -  MemoryUsage of job (MB)
+	45300  -  ResidentSetSize of job (KB)
+...
+006 (869921.735.000) 2024-11-06 12:47:09 Image size of job updated: 45784
+	45  -  MemoryUsage of job (MB)
+	45784  -  ResidentSetSize of job (KB)
+...
+006 (869921.735.000) 2024-11-06 20:12:57 Image size of job updated: 46492
+	46  -  MemoryUsage of job (MB)
+	46492  -  ResidentSetSize of job (KB)
+...
+006 (869921.735.000) 2024-11-06 20:17:34 Image size of job updated: 47556
+	47  -  MemoryUsage of job (MB)
+	47556  -  ResidentSetSize of job (KB)
+...
+040 (869921.735.000) 2024-11-06 20:17:34 Started transferring output files
+	Seconds spent in queue: 27649
+...
+040 (869921.735.000) 2024-11-06 20:17:34 Finished transferring output files
+...
+005 (869921.735.000) 2024-11-06 20:17:34 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 07:29:57, Sys 0 00:00:49  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 07:29:57, Sys 0 00:00:49  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	50428  -  Run Bytes Sent By Job
+	128226480  -  Run Bytes Received By Job
+	50428  -  Total Bytes Sent By Job
+	128226480  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.98        1         1 
+	   Disk (KB)            : 691896     2097152   2098305 
+	   GPUs                 :                            0 
+	   IoHeavy              :                            0 
+	   Memory (MB)          :     47        2048      2048 
+	   TimeExecute (s)      :  27635                       
+	   TimeSlotBusy (s)     :  27655                       
+
+	Job terminated of its own accord at 2024-11-07T02:17:34Z with exit-code 0.
+...

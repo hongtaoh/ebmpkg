@@ -1,0 +1,49 @@
+000 (869923.449.000) 2024-11-06 12:35:06 Job submitted from host: <128.105.68.112:9618?addrs=128.105.68.112-9618+[2607-f388-2200-100-eaeb-d3ff-fea3-4202]-9618&alias=ap2001.chtc.wisc.edu&noUDP&sock=schedd_2481604_82f2>
+...
+040 (869923.449.000) 2024-11-06 12:52:55 Started transferring input files
+	Transferring to host: <128.105.68.46:9618?addrs=128.105.68.46-9618+[2607-f388-2200-100-3680-dff-fe2e-8780]-9618&alias=e2476.chtc.wisc.edu&noUDP&sock=slot1_27_639912_a49f_76787>
+...
+040 (869923.449.000) 2024-11-06 12:53:36 Finished transferring input files
+...
+001 (869923.449.000) 2024-11-06 12:53:36 Job executing on host: <128.105.68.46:9618?addrs=128.105.68.46-9618+[2607-f388-2200-100-3680-dff-fe2e-8780]-9618&alias=e2476.chtc.wisc.edu&noUDP&sock=startd_17531_62e5>
+	SlotName: slot1_27@e2476.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_3853809"
+	Cpus = 1
+	Disk = 2098176
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 2048
+...
+006 (869923.449.000) 2024-11-06 12:53:49 Image size of job updated: 2060
+	3  -  MemoryUsage of job (MB)
+	2060  -  ResidentSetSize of job (KB)
+...
+006 (869923.449.000) 2024-11-06 12:58:49 Image size of job updated: 53896
+	53  -  MemoryUsage of job (MB)
+	53896  -  ResidentSetSize of job (KB)
+...
+040 (869923.449.000) 2024-11-06 16:43:02 Started transferring output files
+...
+040 (869923.449.000) 2024-11-06 16:43:02 Finished transferring output files
+...
+005 (869923.449.000) 2024-11-06 16:43:03 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 03:40:40, Sys 0 00:00:15  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 03:40:40, Sys 0 00:00:15  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	326640  -  Run Bytes Sent By Job
+	128226600  -  Run Bytes Received By Job
+	326640  -  Total Bytes Sent By Job
+	128226600  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            : 692166     2097152   2098176 
+	   GPUs                 :                            0 
+	   IoHeavy              :                            0 
+	   Memory (MB)          :     53        2048      2048 
+	   TimeExecute (s)      :  13766                       
+	   TimeSlotBusy (s)     :  13809                       
+
+	Job terminated of its own accord at 2024-11-06T22:43:02Z with exit-code 0.
+...
